@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三体</title>
+</head>
+<link rel="stylesheet" href="../css/bookstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/css.css">
+<script src="../js/jquery/jquery.min.js"></script>
+<script src="../js/js.js"></script>
+<style>
+    body{
+        background-color: rgb(15, 15, 15);
+    }
+    .col-md-4{
+        padding: 0%; 
+    }
+    .thumbnail{
+        height:850px;
+        background-color:  rgb(15, 15, 15);
+        border-top: 0;
+        border-bottom: 0;
+        border-color: rgb(0, 0, 0);
+    }
+</style>
+<body onload="getTime()">
+
+    <dialog id="dialog">
+        <div class="logon" >
+          <div class="logon_title" >
+              用户登录
+          </div>
+          <div class="logon_content" >
+            <div class="logon_left" >
+              <form>
+                <div class="form-group">
+                  <p><label for="exampleInputEmail1">邮箱：</label></p>
+                  <p><label for="exampleInputPassword1">密码：</label></p>
+                  
+                </div>
+              </form>
+              
+            </div>
+            <div class="logon_right" >
+              <form>
+                <div class="form-group">
+                  
+                  <input type="email" class="form-control" name="uname" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="password" class="form-control" name="upword" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" name="check">请同意《用户隐私保护协议》
+                  </label>
+                </div>
+                <button style="background: #3D7AB5;border: 2px solid #3D7AB5;" class="but" >登录</button>
+              <button class="btn1" onclick="closeRegister()" >取消</button>
+              </form>
+            </div>
+            
+              
+            
+          </div>
+      </dialog>
+      <dialog id="register">
+        <div class="logon" >
+          <div class="logon_title" >
+              用户注册
+          </div>
+          <div class="logon_content" >
+            <div class="logon_left" >
+              <form>
+                <div class="form-group">
+                  <p><label for="exampleInputEmail1">邮箱：</label></p>
+                  <p><label for="exampleInputPassword1">密码：</label></p>
+                  <p><label for="exampleInputPassword1">确认密码：</label></p>
+                </div>
+              </form>
+              
+            </div>
+            <div class="logon_right" >
+              <form>
+                <div class="form-group">
+                  
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">请同意《用户隐私保护协议》
+                  </label>
+                </div>
+                <button style="background: #3D7AB5;border: 2px solid #3D7AB5;" class="but" >注册</button>
+              <button class="btn1" onclick="closeRegister()" >取消</button>
+              </form>
+            </div>
+            
+              
+            
+          </div>
+      </dialog>
+
+
+
+
+
+    <div>
+        <img src="../image/logo.png" style="width:133px; margin-top: 30px; margin-left: 30px;">
+        
+        <span class="box" ><a onclick="openDialog()" style="color:rgb(107, 107, 107);">登录</a></span>
+        <span class="box" ><a href="./注册.html" style="color:rgb(107, 107, 107);">注册</a></span>
+        <span class="box"><p id="p_time"></p></span>
+        <div class="container" >
+            <div style="position: relative;overflow: visible;">
+                <div class="row" >
+                    <div class="col-lg-4 col-md-4">
+                        <div class="thumbnail"  style="border-left: 0;position: relative;">
+                            <div>
+                                <p id="p1" style="margin-top:330px; color: rgb(107, 107, 107); ">01</p>
+                                <a href="./中文剧集.html"><p id="p1" style="margin-top:55px; font-size: 20px; font-weight: bolder;">三体<br>文化馆</p></a>
+                                <p id="p1" style="margin-top:55px;  color: rgb(107, 107, 107);">前进</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="thumbnail" style="border-left: 0;position: relative;">
+                            
+                                
+                                    <p id="p1" style="margin-top:330px; color: rgb(107, 107, 107);font-weight: bolder;">02</p>
+                                    <p id="p1" style="margin-top:55px; font-size: 20px; font-weight: bolder;">三体<br>生活馆</p>
+                                    <p id="p1" style="margin-top:55px;  color: rgb(107, 107, 107);">前进</p>
+                                
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="thumbnail" style="border-left: 0; position: relative;">
+                            
+                                <div>
+                                    <p id="p1" style="margin-top:330px; color: rgb(107, 107, 107);font-weight: bolder;">03</p>
+                                    <p id="p1" style="margin-top:55px; font-size: 20px; font-weight: bolder;">三体<br>档案馆</p>
+                                    <p id="p1" style="margin-top:55px;  color: rgb(107, 107, 107);">前进</p>
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div style="position: absolute;top:730px;left: -140px;z-index: 4;">
+                    <img src="../image/球.png" style="width:1450px">
+                </div>
+            </div>
+
+ 
+        </div>
+        
+    </div>
+    <div style="position:relative ">
+        <img src="../image/背景.png" style="width:1700px ;margin-top: 140px;">
+        <span style="position:absolute; z-index:2;top:898px;left:1250px; " ><a class="btn  btn-lg" href="https://new.qq.com/rain/a/20231021A08GEE00.html" role="button" style="color:black;background-color: white;font-size: 15px;">
+          <span class="glyphicon glyphicon-play">详情</a></span></span>
+            
+        <span style="position:absolute; z-index:2;top:898px;left:1350px; " ><a class="btn  btn-lg" href="#" role="button" style="color:black;background-color: white;font-size: 15px;">
+            主页</a></span>
+    </div>
+    <nav class="under navbar navbar-default navbar-static-bottom">
+        <div class="under2">
+            <footer>
+                <p class="under3">关于我们 | 联系我们</p>
+                <p class="under3">沪ICP备19005476号   Copyright2021 @ 三体宇宙（上海）文化发展有限公司（3body.com） All rights</p>
+            </footer>
+        </div>
+      </nav>
+</body>
+</html>

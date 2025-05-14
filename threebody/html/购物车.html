@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车
+    </title>
+</head>
+<link rel="stylesheet" href="../css/bookstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/css.css">
+<script src="../js/jquery/jquery.min.js"></script>
+<script src="../js/js.js"></script>
+<style>
+    .table{
+        margin-top: 50px;
+    }
+    .breadcrumb{
+        margin-top: 50px;
+        background-color: rgba(0, 0, 0, 0);
+        font-size: larger;
+        color: white;
+    }
+</style>
+<body>
+    <div style="position:relative">
+        
+        <div style="position: absolute;top:-20px">
+            <img src="../image/实体书.jpg" style="width:100%;height:1150px">
+        </div>
+        
+        <div  id="cebian" style="position: relative;height:1100px">
+            <div style="position: absolute;"><img src="../image/logo.png" style="z-index: 1;;width:133px;margin-top: 30px; margin-left: 30px;"></div>
+            <div id="zhongjian" style="position: relative;width:1300px;height:1100px">
+                <div style="position: absolute;">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="./index.html">主页</a></li>
+                            <li><a href="./实体书详情.html">实体书</a></li>
+                            <li class="active">《三体》</li>
+                          </ol>
+                          <h2 style="margin-top: 30px;margin-left: 50px;color: white;">购物车</h2>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <table class="table  " style="color: white; border-color:rgb(99, 99, 99) ;">
+                                    <thead>
+                                        <tr >
+                                            <th><label><input type="checkbox" name="checkAll">全选</label></th>
+                                            <th>图片</th>
+                                            <th>商品名称</th>
+                                            <th>单价</th>
+                                            <th>数量</th>
+                                            <th>小计</t>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                        <tr>
+                                            <td><input type="checkbox" name="ch1"></td>
+                                            <td><img src="../image/书1.png"   
+                                                style="width:150px"
+                                                alt="加载错误"
+                                                ></td>
+                                            <td>《三体》</td>
+                                            <td><span class="unitPrice">46</span></td>
+                                            <!--span 分区 要用到里面的内容-->
+                                            <td>
+                                                <button type="button" class="btn btn-default btn-xs delbtn">-</button>
+                                                <span class="tempNum">1</span>
+                                                <button type="button" class="btn btn-default btn-xs addbtn">+</button>
+                                            </td>
+                                            <td><span class="tempPrice">46</span></td>
+                                            <td><button type="button" class="btn btn-default btn-xs removebtn">删除 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="ch1"></td>
+                                            <td><img src="../image/书2.png"   
+                                                style="width:150px"
+                                                alt="加载错误"
+                                                ></td>
+                                            <td>《时间移民》</td>
+                                            <td><span class="unitPrice">15</span></td>
+                                            <!--span 分区 要用到里面的内容-->
+                                            <td>
+                                                <button type="button" class="btn btn-default btn-xs delbtn">-</button>
+                                                <span class="tempNum">1</span>
+                                                <button type="button" class="btn btn-default btn-xs addbtn">+</button>
+                                            </td>
+                                            <td><span class="tempPrice">15</span></td>
+                                            <td><button type="button" class="btn btn-default btn-xs removebtn">删除 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="ch1"></td>
+                                            <td><img src="../image/书3.png"   
+                                                style="width:150px"
+                                                alt="加载错误"
+                                                ></td>
+                                            <td>《梦之海》</td>
+                                            <td><span class="unitPrice">18</span></td>
+                                            <!--span 分区 要用到里面的内容-->
+                                            <td>
+                                                <button type="button" class="btn btn-default btn-xs delbtn">-</button>
+                                                <span class="tempNum">1</span>
+                                                <button type="button" class="btn btn-default btn-xs addbtn">+</button>
+                                            </td>
+                                            <td><span class="tempPrice">18</span></td>
+                                            <td><button type="button" class="btn btn-default btn-xs removebtn">删除 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="ch1"></td>
+                                            <td><img src="../image/书4.png"   
+                                                style="width:150px"
+                                                alt="加载错误"
+                                                ></td>
+                                            <td>《乡村教师》</td>
+                                            <td><span class="unitPrice">21</span></td>
+                                            <!--span 分区 要用到里面的内容-->
+                                            <td>
+                                                <button type="button" class="btn btn-default btn-xs delbtn">-</button>
+                                                <span class="tempNum">1</span>
+                                                <button type="button" class="btn btn-default btn-xs addbtn">+</button>
+                                            </td>
+                                            <td><span class="tempPrice">21</span></td>
+                                            <td><button type="button" class="btn btn-default btn-xs removebtn">删除 </td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="checkbox" name="ch1"></td>
+                                            <td><img src="../image/书5.png"   
+                                                style="width:150px"
+                                                alt="加载错误"
+                                                ></td>
+                                            <td>《时间移民》</td>
+                                            <td><span class="unitPrice">13</span></td>
+                                            <!--span 分区 要用到里面的内容-->
+                                            <td>
+                                                <button type="button" class="btn btn-default btn-xs delbtn">-</button>
+                                                <span class="tempNum">1</span>
+                                                <button type="button" class="btn btn-default btn-xs addbtn">+</button>
+                                            </td>
+                                            <td><span class="tempPrice">13</span></td>
+                                            <td><button type="button" class="btn btn-default btn-xs removebtn">删除 </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5"></td>
+                                            <td>已选：<span class="totalNum">0</span></td>
+                                            <td>总计：<span class="totalPrice">0</span></td>
+                                            
+                                        </tr>
+                                        
+                                    
+                                </table>
+                            </div>
+                            <div class="col-md-1"></div>
+
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+                <div id="right" style="position: relative;margin-left: 1330px;">
+                    <div style="position: absolute;">
+                        <a href="./三体.html"><p style="color: rgb(212, 212, 212) ;margin-top: 120px;margin-left: 30px;">返航  <span class="glyphicon glyphicon-menu-left"></span></p></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

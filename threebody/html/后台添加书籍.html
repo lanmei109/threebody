@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加书籍</title>
+    <link rel="stylesheet" href="../css/bookstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css.css">
+    <script src="../js/jquery/jquery.min.js"></script>
+    <script src="../js/js.js"></script>
+<style>
+.breadcrumb{
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: larger;
+    color: white;
+}
+.form-group{
+  margin-top: 30px;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+    <div style="position:relative">
+        
+        <div style="position: absolute;top:-20px">
+            <img src="../image/实体书.jpg" style="width:100%;height:1150px">
+        </div>
+        
+        <div  id="cebian" style="position: relative;height:1100px">
+            <div style="position: absolute;"><img src="../image/logo.png" style="z-index: 1;;width:133px;margin-top: 30px; margin-left: 30px;"></div>
+            <div id="zhongjian" style="position: relative;width:1300px;height:1100px">
+                <div style="position: absolute;">
+                    <div class="container">
+                        <ol class="breadcrumb">
+                            <li><a href="./index.html">后台</a></li>
+                            <li ><a href="./后台书籍列表.html">书籍列表</a></li>
+                            <li class="active">添加书籍</li>
+                          </ol>
+                          <h2 style="margin-top: 30px;margin-left: 50px;color: white;">添加书籍</h2>
+                        <div class="row" style="margin-top: 30px;">
+
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                      <label class="col-sm-2 control-label">书籍名称：</label>
+                                      <div class="col-sm-10">
+                                        <input  class="form-control" id="inputEmail3" placeholder="请输入书籍名称">
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">作者：</label>
+                                        <div class="col-sm-10">
+                                          <input  class="form-control" id="inputEmail3" placeholder="请输入作者">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label">出版社：</label>
+                                        <div class="col-sm-10">
+                                          <input  class="form-control" id="inputEmail3" placeholder="请输入出版社">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label">价格：</label>
+                                        <div class="col-sm-10">
+                                          <input  class="form-control" id="inputEmail3" placeholder="请输入价格">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="col-sm-2 control-label">ISBN号：</label>
+                                        <div class="col-sm-10">
+                                          <input  class="form-control" id="inputEmail3" placeholder="请输入ISBN号">
+                                        </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">系列：</label>
+                                      <div class=" col-sm-10">
+                                        
+                                        <select class="form-control">
+                                            <option>科幻</option>
+                                            <option>剧情</option>
+                                            <option>悬疑</option>
+                                            <option>儿童</option>
+
+                                          </select>
+                        
+                                      </div>
+
+                                    
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputFile" class="col-sm-2 control-label">添加图片：</label>
+                                      <input class="col-sm-10" type="file" id="exampleInputFile">
+                                    </div>
+
+                                    <div class="form-group">
+                                      <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-default">添加</button>
+                                      </div>
+                                    </div>
+                                    </div>
+                                
+
+                                    
+
+                                  </form>
+
+                            
+                            <div class="col-md-1"></div>
+
+
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+                <div id="right" style="position: relative;margin-left: 1330px;">
+                    <div style="position: absolute;">
+                        <a href="./三体.html"><p style="color: rgb(212, 212, 212) ;margin-top: 120px;margin-left: 30px;">返航  <span class="glyphicon glyphicon-menu-left"></span></p></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+</body>
+</html>
